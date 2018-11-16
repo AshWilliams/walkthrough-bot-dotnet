@@ -22,7 +22,6 @@ N/A.
 
 `git clone https://github.com/rcervantes/walkthrough-bot-dotnet.git`
 
-
 #### Using Visual Studio 2017 (Any Version)
 
 1. Based on the webinar explanation go to `source\1. start\` folder and open the WBD.sln file in Visual Studio 2017.
@@ -36,6 +35,23 @@ N/A.
 1. Open Visual Studio Code and open the following folder `source\1. start\WBD\`.
 
 2. Open a terminal pointing the folder `source\1. start\WBD\` folder and run the following command: <b>dotnet build</b>, wait until nuget packages are being reinstalled and the project finishes the build process (the project should be successfully compiled but is not ready to be executed).
+
+#### Translator Text Configuration
+
+Go to https://portal.azure.com/ and get successfully sign-in with your Employee or Microsoft account.
+
+Steps:
+
+1. Create a Translator Text resource with the following configuration:
+
+    - Name: translator(uniqueid) e.g. translator017.
+    - Subscription: your subscription.
+    - Pricing tier: S1 (Pay as you go).
+    - Resource Group: Create new with the same resource name, e.g. translator017.
+
+2. Once the resource has been deployed go to the resource and click in <b>Resource Management->Keys</b> and take note in a notepad about the following information (we are going to use this information later to configure the bot):
+
+    - Key 1
 
 #### LUIS Configuration
 
